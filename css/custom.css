@@ -2,3 +2,8 @@
 .service-box li {
     list-style-type: disc;
 }
+
+/* Portfolio */
+.popup-box a {
+    color: #9c27b0;
+}

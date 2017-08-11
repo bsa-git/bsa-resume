@@ -117,16 +117,16 @@ require(['vue',
                     data: function () {
                         return {
                             portfolio: [
-                                { image: 'images/portfolio-1.jpg', title: 'Project Title', category_number: '1', category: 'Branding', description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla consequat massa quis enim.' },
-                                { image: 'images/portfolio-2.jpg', title: 'Project Title', category_number: '2', category: 'Websites', description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla consequat massa quis enim.' },
-                                { image: 'images/portfolio-3.jpg', title: 'Project Title', category_number: '1', category: 'Branding', description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.' },
-                                { image: 'images/portfolio-4.jpg', title: 'Project Title', category_number: '2', category: 'Websites', description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.' },
-                                { image: 'images/portfolio-5.jpg', title: 'Project Title', category_number: '2', category: 'Websites', description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.' },
-                                { image: 'images/portfolio-6.jpg', title: 'Project Title', category_number: '1', category: 'Branding', description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.' },
+                                { image: 'images/portfolio-1.jpg', title: 'Автоматизированная система мониторинга цеха М-5 ПАТ «АЗОТ»', category_number: '1', category: 'Intranet', description: 'Автоматизированная система мониторинга цеха М-5 ПАТ «АЗОТ» служит для сбора и отображения данных в реальном времени.' },
+                                { image: 'images/portfolio-2.jpg', title: 'Кредит-онлайн от «ОЩАДКАСА»', category_number: '2', category: 'Websites', description: 'Кредит-онлайн от <a href="http://kasa.org.ua/" target="_blank">«ОЩАДКАСА»</a> – это удобный, быстрый и надежный способ осуществить Вашу мечту о покупке.' },
+                                { image: 'images/portfolio-3.jpg', title: 'Получение отчетов со станции сбора данных DX-2000 фирмы Yokogawa', category_number: '1', category: 'Intranet', description: 'Получение отчетов в различных форматах (HTML, PDF, Excel) по протоколу FTP со станции сбора данных DX-2000 фирмы Yokogawa.' },
+                                { image: 'images/portfolio-4.jpg', title: 'Кредит онлайн на карту «MoneyBoom»', category_number: '2', category: 'Websites', description: '<a href="https://moneyboom.ua/" target="_blank">MoneyBOOM</a> – это услуга онлайн кредитования населения без посещения офиса компании. Мы предлагаем быстрые кредиты до 7000 грн на срок до 30 дней.' },
+                                { image: 'images/portfolio-5.jpg', title: 'Публічне акціонерне товариство «АЗОТ»', category_number: '2', category: 'Websites', description: 'Публічне акціонерне товариство <a href="http://www.azot.cherkassy.net/" target="_blank">«АЗОТ»</a> – один із вітчизняних виробників мінеральних добрив, виробник капролактаму та іонообмінних смол, аміачної селітри з часткою 36% на внутрішньому ринку.' },
+                                { image: 'images/portfolio-6.jpg', title: 'Система управления сообщениями в блоге', category_number: '1', category: 'Intranet', description: 'Система управления сообщениями в блоге. Каждое сообщение может включать в себя техт, видео, аудио, изображения и географическую информацию, привязанную к карте Google.' },
                             ],
                             filters: [
-                                { dataFilter: 'all', title: 'Show All' },
-                                { dataFilter: '.category-1', title: 'Branding' },
+                                { dataFilter: 'all', title: 'Показать все' },
+                                { dataFilter: '.category-1', title: 'Intranet' },
                                 { dataFilter: '.category-2', title: 'Websites' },
                             ]
                         }
