@@ -73,15 +73,23 @@ require(['vue',
                     template: about,
                     data: function () {
                         return {
-                            firstName: 'Johnny',
-                            lastName: 'Smith',
-                            mySpeciality: 'Designer and Front-end Developer',
-                            briefDescriptionSpeciality: 'Ultricies nisi voluptatem, illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque latu dantium, totam rem aperiam, eaque ipsa quae ab illo tempor dignissim at.',
+                            firstName: 'Сергей',
+                            lastName: 'Бескоровайный',
+                            mySpeciality: 'Front-end и Back-end Разработчик',
+                            briefDescriptionSpeciality: 'Занимаюсь разработкой серверных приложений на PHP, Node.js и клиентских приложений на HTML/CSS и Java Script фреймворках.',
                             skills: [
-                                { skill: 'HTML5 & CSS3', percent: 100 },
-                                { skill: 'JavaScript', percent: 90 },
-                                { skill: 'Joomla', percent: 85 },
-                                { skill: 'Wordpress', percent: 95 },
+                                { skill: 'PHP', percent: 85 },
+                                { skill: 'Node,js', percent: 50 },
+                                { skill: 'Zend Framework', percent: 75 },
+                                { skill: 'Bitrix', percent: 60 },
+                                { skill: 'Silex/Symfony', percent: 60 },
+                                { skill: 'Laravel', percent: 30 },
+                                { skill: 'HTML5 & CSS3', percent: 80 },
+                                { skill: 'JavaScript', percent: 75 },
+                                { skill: 'JQuery', percent: 65 },
+                                { skill: 'Vue.js', percent: 60 },
+                                { skill: 'Twitter Bootstrap', percent: 70 },
+                                { skill: 'Material Component Framework', percent: 60 },
                             ]
                         }
                     },
@@ -96,10 +104,10 @@ require(['vue',
                     data: function () {
                         return {
                             services: [
-                                { icon: 'fa-globe', name: 'Web Development', description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.' },
-                                { icon: 'fa-pencil', name: 'UX and UI Design', description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.' },
-                                { icon: 'fa-users', name: 'Online Marketing', description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.' },
-                                { icon: 'fa-search-plus', name: 'SEO Optimization', description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.' },
+                                { icon: 'fa-database', name: 'Back-end разработка', items: ['проектирование архитектуры сервиса;', 'создание ядра сайта;', 'разработка платформы и основного функционала;', 'работа с архитектурой кода;', 'разработка приложений, поддерживающих пользовательский интерфейс и безопасность;', 'работа с базами данных.'] },
+                                { icon: 'fa-globe', name: 'Front-end разработка', items: ['кросс-браузерная и кросс-платформенная разработка;', 'прогрессивное улучшение и изящная деградация;', 'мобильная разработка;', 'адаптивная и отзывчивая верстка;', 'веб-шрифты;', 'использование различных фреймворков для пользовательского интерфейса;', 'создание одностраничных приложений.'] },
+                                { icon: 'fa-money', name: 'Онлайн Платежи', items: ['интернет-платежи с банковских карт;', 'интернет-платежи с терминалов;', 'безопасность интернет платежей.'] },
+                                { icon: 'fa-search-plus', name: 'SEO Оптимизация', items: ['внутренняя оптимизация;', 'оптимизация под Google;', 'оптимизация под Yandex;', 'внешние мероприятия по оптимизации.'] },
                             ]
                         }
                     },
