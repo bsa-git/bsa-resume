@@ -2,8 +2,8 @@
     <div class="right-br"></div>
     <div class="fixed-right-socials">
         <ul class="list-unstiled">
-            <li v-for="item in socials">
-                <a href="#"><i :class="['fa', item.social]"></i></a>
+            <li v-for="social in socials">
+                <a :href="social.url" :title="social.title" target="_blank"><i :class="['fa', social.icon]"></i></a>
             </li>
         </ul>
     </div>

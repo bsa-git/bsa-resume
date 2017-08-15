@@ -3,7 +3,24 @@
     list-style-type: disc;
 }
 
-/* Portfolio */
-.popup-box a {
+/* Resume */
+.resume-box li {
+    list-style-type: disc;
+    margin-left: 40px;
+}
+
+/* Links */
+.popup-box a, .resume-box a, .contact-info a {
     color: #9c27b0;
 }
+
+/* Fonts */
+.sidebar .nav li {
+    font: 900 13px "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 10px 0;
+}
+
+.contact-info li h3 {
+    font: 900 13px "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
