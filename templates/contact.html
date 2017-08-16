@@ -10,7 +10,7 @@
                     <div class="row">
                         <div class="col-xs-12 col-sm-6 contact-form">
                             <div class="widget">
-                                <form method="post" id="contactform">
+                                <form method="post" id="contactform" v-on:submit.prevent="send">
                                     <div class="input-style">
                                         <div>
                                             <input class="form-control" type="text" id="name" name="name"
@@ -26,11 +26,19 @@
                                                   v-model="form.message"></textarea>
                                     </div>
                                     <input type="submit" id="submit" class="btn btn-info" name="submit"
-                                           value="Send Message" v-on:click="send">
+                                           value="Send Message">
                                     <div class="submit-result">
                                         <p id="success">Your Message has been sent!</p>
                                         <p id="error">Something went wrong, go back and try again!</p>
                                     </div>
+                                    <!--
+                                    <div class="authorize-buttons">
+                                        <button id="authorize-button" style="display: none;">Authorize</button>
+                                        <button id="signout-button" style="display: none;">Sign Out</button>
+
+                                        <pre id="content"></pre>
+                                    </div>
+                                    -->
                                 </form>
                             </div>
                         </div>

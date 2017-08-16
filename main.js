@@ -5,24 +5,23 @@ requirejs.config({
         text: "js/requirejs/text", //requirejs plugin for load text
         vue: 'https://unpkg.com/vue/dist/vue'
     },
-    shim: {
-    }
+    shim: {}
 });
 
 require(['vue',
-    'text!templates/preloader.html',
-    'text!templates/phone.html',
-    'text!templates/socials.html',
-    'text!templates/sidebar.html',
-    'text!templates/about.html',
-    'text!templates/services.html',
-    'text!templates/portfolio.html',
-    'text!templates/resume.html',
-    'text!templates/blog.html',
-    'text!templates/testimonial.html',
-    'text!templates/contact.html',
-    'text!templates/footer.html',
-],
+        'text!templates/preloader.html',
+        'text!templates/phone.html',
+        'text!templates/socials.html',
+        'text!templates/sidebar.html',
+        'text!templates/about.html',
+        'text!templates/services.html',
+        'text!templates/portfolio.html',
+        'text!templates/resume.html',
+        'text!templates/blog.html',
+        'text!templates/testimonial.html',
+        'text!templates/contact.html',
+        'text!templates/footer.html',
+    ],
     function (Vue, preloader, phone, socials, sidebar, about, services, portfolio, resume, blog, testimonial, contact, footer) {
 
         var app = new Vue({
@@ -41,7 +40,7 @@ require(['vue',
                 'my-phone': {
                     template: phone,
                     data: function () {
-                        return { phone: '+380980029369' }
+                        return {phone: '+380980029369'}
                     }
                 },
                 'my-socials': {
@@ -49,10 +48,22 @@ require(['vue',
                     data: function () {
                         return {
                             socials: [
-                                {title: 'facebook', url: 'https://www.facebook.com/profile.php?id=100010324420196', icon: 'fa-facebook'},
+                                {
+                                    title: 'facebook',
+                                    url: 'https://www.facebook.com/profile.php?id=100010324420196',
+                                    icon: 'fa-facebook'
+                                },
                                 {title: 'twitter', url: 'https://twitter.com/bsa2657', icon: 'fa-twitter'},
-                                {title: 'google+', url: 'https://plus.google.com/110341449488589699610?rel=author', icon: 'fa-google-plus'},
-                                {title: 'SkypeName="bsa_home"', url: 'https://login.skype.com/login?client_id=578134&redirect_uri=https%3A%2F%2Fweb.skype.com%2F', icon: 'fa-skype'}
+                                {
+                                    title: 'google+',
+                                    url: 'https://plus.google.com/110341449488589699610?rel=author',
+                                    icon: 'fa-google-plus'
+                                },
+                                {
+                                    title: 'SkypeName="bsa_home"',
+                                    url: 'https://login.skype.com/login?client_id=578134&redirect_uri=https%3A%2F%2Fweb.skype.com%2F',
+                                    icon: 'fa-skype'
+                                }
                             ]
                         }
                     }
@@ -60,7 +71,7 @@ require(['vue',
                 'my-sidebar': {
                     template: sidebar,
                     data: function () {
-                        return { myImageSrc: 'images/avatar.jpg' }
+                        return {myImageSrc: 'images/avatar.jpg'}
                     }
                 },
                 'my-about': {
@@ -72,18 +83,18 @@ require(['vue',
                             mySpeciality: 'Front-end и Back-end Разработчик',
                             briefDescriptionSpeciality: 'Занимаюсь разработкой серверных приложений на PHP, Node.js и клиентских приложений на HTML/CSS и Java Script.',
                             skills: [
-                                { skill: 'PHP', percent: 85 },
-                                { skill: 'Node,js', percent: 50 },
-                                { skill: 'Zend Framework', percent: 75 },
-                                { skill: 'Bitrix', percent: 60 },
-                                { skill: 'Silex/Symfony', percent: 60 },
-                                { skill: 'Laravel', percent: 30 },
-                                { skill: 'HTML5 & CSS3', percent: 80 },
-                                { skill: 'JavaScript', percent: 75 },
-                                { skill: 'JQuery', percent: 65 },
-                                { skill: 'Vue.js', percent: 60 },
-                                { skill: 'Twitter Bootstrap', percent: 70 },
-                                { skill: 'Material Component Framework', percent: 60 },
+                                {skill: 'PHP', percent: 85},
+                                {skill: 'Node,js', percent: 50},
+                                {skill: 'Zend Framework', percent: 75},
+                                {skill: 'Bitrix', percent: 60},
+                                {skill: 'Silex/Symfony', percent: 60},
+                                {skill: 'Laravel', percent: 30},
+                                {skill: 'HTML5 & CSS3', percent: 80},
+                                {skill: 'JavaScript', percent: 75},
+                                {skill: 'JQuery', percent: 65},
+                                {skill: 'Vue.js', percent: 60},
+                                {skill: 'Twitter Bootstrap', percent: 70},
+                                {skill: 'Material Component Framework', percent: 60},
                             ]
                         }
                     },
@@ -98,10 +109,26 @@ require(['vue',
                     data: function () {
                         return {
                             services: [
-                                { icon: 'fa-database', name: 'Back-end разработка', items: ['проектирование архитектуры сервиса;', 'создание ядра сайта;', 'разработка платформы и основного функционала;', 'работа с архитектурой кода;', 'разработка приложений, поддерживающих пользовательский интерфейс и безопасность;', 'работа с базами данных.'] },
-                                { icon: 'fa-globe', name: 'Front-end разработка', items: ['кросс-браузерная и кросс-платформенная разработка;', 'прогрессивное улучшение и изящная деградация;', 'мобильная разработка;', 'адаптивная и отзывчивая верстка;', 'веб-шрифты;', 'использование различных фреймворков для пользовательского интерфейса;', 'создание одностраничных приложений.'] },
-                                { icon: 'fa-money', name: 'Онлайн Платежи', items: ['интернет-платежи с банковских карт;', 'интернет-платежи с терминалов;', 'безопасность интернет платежей.'] },
-                                { icon: 'fa-search-plus', name: 'SEO Оптимизация', items: ['внутренняя оптимизация;', 'оптимизация под Google;', 'оптимизация под Yandex;', 'внешние мероприятия по оптимизации.'] },
+                                {
+                                    icon: 'fa-database',
+                                    name: 'Back-end разработка',
+                                    items: ['проектирование архитектуры сервиса;', 'создание ядра сайта;', 'разработка платформы и основного функционала;', 'работа с архитектурой кода;', 'разработка приложений, поддерживающих пользовательский интерфейс и безопасность;', 'работа с базами данных.']
+                                },
+                                {
+                                    icon: 'fa-globe',
+                                    name: 'Front-end разработка',
+                                    items: ['кросс-браузерная и кросс-платформенная разработка;', 'прогрессивное улучшение и изящная деградация;', 'мобильная разработка;', 'адаптивная и отзывчивая верстка;', 'веб-шрифты;', 'использование различных фреймворков для пользовательского интерфейса;', 'создание одностраничных приложений.']
+                                },
+                                {
+                                    icon: 'fa-money',
+                                    name: 'Онлайн Платежи',
+                                    items: ['интернет-платежи с банковских карт;', 'интернет-платежи с терминалов;', 'безопасность интернет платежей.']
+                                },
+                                {
+                                    icon: 'fa-search-plus',
+                                    name: 'SEO Оптимизация',
+                                    items: ['внутренняя оптимизация;', 'оптимизация под Google;', 'оптимизация под Yandex;', 'внешние мероприятия по оптимизации.']
+                                },
                             ]
                         }
                     },
@@ -111,17 +138,53 @@ require(['vue',
                     data: function () {
                         return {
                             portfolio: [
-                                { image: 'images/portfolio-1.jpg', title: 'Автоматизированная система мониторинга цеха М-5 ПАТ «АЗОТ»', category_number: '1', category: 'Intranet', description: 'Автоматизированная система мониторинга цеха М-5 ПАТ «АЗОТ» служит для сбора и отображения данных в реальном времени.' },
-                                { image: 'images/portfolio-2.jpg', title: 'Кредит-онлайн «ОЩАДКАСА»', category_number: '2', category: 'Websites', description: 'Кредит-онлайн от <a href="http://kasa.org.ua/" target="_blank">«ОЩАДКАСА»</a> – это удобный, быстрый и надежный способ осуществить Вашу мечту о покупке.' },
-                                { image: 'images/portfolio-3.jpg', title: 'Получение отчетов со станции сбора данных DX-2000 фирмы Yokogawa', category_number: '1', category: 'Intranet', description: 'Получение отчетов в различных форматах (HTML, PDF, Excel) по протоколу FTP со станции сбора данных DX-2000 фирмы Yokogawa.' },
-                                { image: 'images/portfolio-4.jpg', title: 'Кредит онлайн «MoneyBoom»', category_number: '2', category: 'Websites', description: '<a href="https://moneyboom.ua/" target="_blank">MoneyBOOM</a> – это услуга онлайн кредитования населения без посещения офиса компании. Мы предлагаем быстрые кредиты до 7000 грн на срок до 30 дней.' },
-                                { image: 'images/portfolio-5.jpg', title: 'Публічне акціонерне товариство «АЗОТ»', category_number: '2', category: 'Websites', description: 'Публічне акціонерне товариство <a href="http://www.azot.cherkassy.net/" target="_blank">«АЗОТ»</a> – один із вітчизняних виробників мінеральних добрив, виробник капролактаму та іонообмінних смол, аміачної селітри з часткою 36% на внутрішньому ринку.' },
-                                { image: 'images/portfolio-6.jpg', title: 'Система управления сообщениями в блоге', category_number: '1', category: 'Intranet', description: 'Система управления сообщениями в блоге. Каждое сообщение может включать в себя техт, видео, аудио, изображения и географическую информацию, привязанную к карте Google.' },
+                                {
+                                    image: 'images/portfolio-1.jpg',
+                                    title: 'Автоматизированная система мониторинга цеха М-5 ПАТ «АЗОТ»',
+                                    category_number: '1',
+                                    category: 'Intranet',
+                                    description: 'Автоматизированная система мониторинга цеха М-5 ПАТ «АЗОТ» служит для сбора и отображения данных в реальном времени.'
+                                },
+                                {
+                                    image: 'images/portfolio-2.jpg',
+                                    title: 'Кредит-онлайн «ОЩАДКАСА»',
+                                    category_number: '2',
+                                    category: 'Websites',
+                                    description: 'Кредит-онлайн от <a href="http://kasa.org.ua/" target="_blank">«ОЩАДКАСА»</a> – это удобный, быстрый и надежный способ осуществить Вашу мечту о покупке.'
+                                },
+                                {
+                                    image: 'images/portfolio-3.jpg',
+                                    title: 'Получение отчетов со станции сбора данных DX-2000 фирмы Yokogawa',
+                                    category_number: '1',
+                                    category: 'Intranet',
+                                    description: 'Получение отчетов в различных форматах (HTML, PDF, Excel) по протоколу FTP со станции сбора данных DX-2000 фирмы Yokogawa.'
+                                },
+                                {
+                                    image: 'images/portfolio-4.jpg',
+                                    title: 'Кредит онлайн «MoneyBoom»',
+                                    category_number: '2',
+                                    category: 'Websites',
+                                    description: '<a href="https://moneyboom.ua/" target="_blank">MoneyBOOM</a> – это услуга онлайн кредитования населения без посещения офиса компании. Мы предлагаем быстрые кредиты до 7000 грн на срок до 30 дней.'
+                                },
+                                {
+                                    image: 'images/portfolio-5.jpg',
+                                    title: 'Публічне акціонерне товариство «АЗОТ»',
+                                    category_number: '2',
+                                    category: 'Websites',
+                                    description: 'Публічне акціонерне товариство <a href="http://www.azot.cherkassy.net/" target="_blank">«АЗОТ»</a> – один із вітчизняних виробників мінеральних добрив, виробник капролактаму та іонообмінних смол, аміачної селітри з часткою 36% на внутрішньому ринку.'
+                                },
+                                {
+                                    image: 'images/portfolio-6.jpg',
+                                    title: 'Система управления сообщениями в блоге',
+                                    category_number: '1',
+                                    category: 'Intranet',
+                                    description: 'Система управления сообщениями в блоге. Каждое сообщение может включать в себя техт, видео, аудио, изображения и географическую информацию, привязанную к карте Google.'
+                                },
                             ],
                             filters: [
-                                { dataFilter: 'all', title: 'Показать все' },
-                                { dataFilter: '.category-1', title: 'Intranet' },
-                                { dataFilter: '.category-2', title: 'Websites' },
+                                {dataFilter: 'all', title: 'Показать все'},
+                                {dataFilter: '.category-1', title: 'Intranet'},
+                                {dataFilter: '.category-2', title: 'Websites'},
                             ]
                         }
                     },
@@ -183,7 +246,7 @@ require(['vue',
                                     name: 'Ведущий инженер программист',
                                     description: 'Работал в отделе автоматизации ОАО «АЗОТ», г. Черкассы. Украина. ' +
                                     'Занимался проектами автоматизации производства, интеграцией и разработкой программного обеспечения.<br/>' +
-                                    '<strong>Используемые технологии:</strong> Borland Delphi, PHP, ZendFramework-1, База данных - MySQL<br/>'+
+                                    '<strong>Используемые технологии:</strong> Borland Delphi, PHP, ZendFramework-1, База данных - MySQL<br/>' +
                                     '<strong>Учавствовал в разработке проектов:</strong> ',
                                     projects: [
                                         'Автоматизация цеха по производству азотной кислоты на базе системы управления I/A Series Inc.( Foxboro);',
@@ -214,9 +277,24 @@ require(['vue',
                     data: function () {
                         return {
                             posts: [
-                                { image: 'images/blog-img-1.jpg', date: 'February 15, 2016', title: 'Blog Post with Image', text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' },
-                                { image: 'images/blog-img-2.jpg', date: 'February 15, 2016', title: 'Standart Blog Post', text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' },
-                                { image: 'images/blog-img-3.jpg', date: 'February 15, 2016', title: 'Blog Post with Image', text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' },
+                                {
+                                    image: 'images/blog-img-1.jpg',
+                                    date: 'February 15, 2016',
+                                    title: 'Blog Post with Image',
+                                    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+                                },
+                                {
+                                    image: 'images/blog-img-2.jpg',
+                                    date: 'February 15, 2016',
+                                    title: 'Standart Blog Post',
+                                    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+                                },
+                                {
+                                    image: 'images/blog-img-3.jpg',
+                                    date: 'February 15, 2016',
+                                    title: 'Blog Post with Image',
+                                    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+                                },
                             ]
                         }
                     },
@@ -226,9 +304,24 @@ require(['vue',
                     data: function () {
                         return {
                             testimonials: [
-                                { image: 'images/client-1.jpg', name: 'Robert Green', position: 'Businessman', content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.' },
-                                { image: 'images/client-2.jpg', name: 'Robert Green', position: 'Businessman', content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.' },
-                                { image: 'images/client-3.jpg', name: 'Robert Green', position: 'Businessman', content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.' },
+                                {
+                                    image: 'images/client-1.jpg',
+                                    name: 'Robert Green',
+                                    position: 'Businessman',
+                                    content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.'
+                                },
+                                {
+                                    image: 'images/client-2.jpg',
+                                    name: 'Robert Green',
+                                    position: 'Businessman',
+                                    content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.'
+                                },
+                                {
+                                    image: 'images/client-3.jpg',
+                                    name: 'Robert Green',
+                                    position: 'Businessman',
+                                    content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.'
+                                },
                             ]
                         }
                     },
@@ -241,7 +334,7 @@ require(['vue',
                             phone: '+380 98 002 9369',
                             email: 'bsa2657@yandex.ru',
                             website: 'http://bsa-git.github.io/',
-                            google_maps_url:  'https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d83109.89941469842!2d32.090707699999996!3d49.38650455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1502776343031',// 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109552.19658281952!2d75.78663299928208!3d30.900473636616745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a837462345a7d%3A0x681102348ec60610!2sLudhiana%2C+Punjab+141001!5e0!3m2!1sen!2sin!4v1461389509410',
+                            google_maps_url: 'https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d83109.89941469842!2d32.090707699999996!3d49.38650455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1502776343031',// 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109552.19658281952!2d75.78663299928208!3d30.900473636616745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a837462345a7d%3A0x681102348ec60610!2sLudhiana%2C+Punjab+141001!5e0!3m2!1sen!2sin!4v1461389509410',
                             form: {
                                 name: '',
                                 email: '',
@@ -252,7 +345,20 @@ require(['vue',
                     // define methods under the `methods` object
                     methods: {
                         send: function (event) {
-                            // `this` inside methods point to the Vue instance
+
+                            Email.send("bs261257@gmail.com",
+                                "bs261257@mail.ru",
+                                "Test - mail message",
+                                "Hellow, bs261257@mail.ru",
+                                {token: "2ba4520f-800c-422d-b051-c504a7f49022"}
+                                );
+
+                            /*
+                            "smtp.gmail.com",
+                                "bs261257@gmail.com",
+                                "26g12ma57il"
+                             */
+
                             alert('Hello ' + this.form.name + '!')
                         }
                     }
