@@ -345,20 +345,6 @@ require(['vue',
                     // define methods under the `methods` object
                     methods: {
                         send: function (event) {
-
-                            Email.send("bs261257@gmail.com",
-                                "bs261257@mail.ru",
-                                "Test - mail message",
-                                "Hellow, bs261257@mail.ru",
-                                {token: "2ba4520f-800c-422d-b051-c504a7f49022"}
-                                );
-
-                            /*
-                            "smtp.gmail.com",
-                                "bs261257@gmail.com",
-                                "26g12ma57il"
-                             */
-
                             alert('Hello ' + this.form.name + '!')
                         }
                     }

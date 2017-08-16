@@ -10,7 +10,7 @@
                     <div class="row">
                         <div class="col-xs-12 col-sm-6 contact-form">
                             <div class="widget">
-                                <form method="post" id="contactform" v-on:submit.prevent="send">
+                                <form method="post" id="contactform" v-on:submit.stop.prevent="send">
                                     <div class="input-style">
                                         <div>
                                             <input class="form-control" type="text" id="name" name="name"
