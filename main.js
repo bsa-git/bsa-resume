@@ -346,6 +346,9 @@ require(['vue',
                     methods: {
                         send: function (event) {
                             alert('Hello ' + this.form.name + '!')
+                        },
+                        initGapi: function (event) {
+
                         }
                     }
                 },
