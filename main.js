@@ -278,23 +278,25 @@ require(['vue',
                         return {
                             posts: [
                                 {
-                                    image: 'images/blog-img-1.jpg',
-                                    date: 'February 15, 2016',
-                                    title: 'Blog Post with Image',
-                                    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+                                    url: 'http://bsa-git.github.io/blog/gapi/',
+                                    image: 'images/blog-img-1.png',
+                                    date: '21 Августа, 2017',
+                                    title: 'Google Client API',
+                                    text: 'Вы можете использовать в своих клиенских веб приложениях такие Google сервисы как People, Calendar, Drive и т.д.'
                                 },
                                 {
+                                    url: 'http://bsa-git.github.io/silex-mvc/ru/',
                                     image: 'images/blog-img-2.jpg',
-                                    date: 'February 15, 2016',
-                                    title: 'Standart Blog Post',
-                                    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+                                    date: '30 Сентября, 2016',
+                                    title: 'Silex-MVC',
+                                    text: 'Простой фреймворк реализующий шаблон проектирования - MVC на базе SILEX (PHP микро-фреймворка, созданного на основе Symfony2 компонентов).'
                                 },
-                                {
-                                    image: 'images/blog-img-3.jpg',
-                                    date: 'February 15, 2016',
-                                    title: 'Blog Post with Image',
-                                    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-                                },
+                                // {
+                                //     image: 'images/blog-img-3.jpg',
+                                //     date: 'February 15, 2016',
+                                //     title: 'Blog Post with Image',
+                                //     text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+                                // },
                             ]
                         }
                     },
@@ -356,9 +358,9 @@ require(['vue',
                     template: footer,
                     data: function () {
                         return {
-                            copyright: '2016 Osahan',
-                            developer: 'Osahan Studio',
-                            social: 'https://www.facebook.com/iamgurdeeposahan'
+                            copyright: '2017 BSA Lab',
+                            developer: 'Бескоровайный Сергей',
+                            site: 'http://bsa-git.github.io/'
                         }
                     }
                 },
