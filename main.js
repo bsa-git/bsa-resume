@@ -332,7 +332,7 @@ require(['vue',
                     template: contact,
                     data: function () {
                         return {
-                            address: 'ул.Ярославская 34 кв.159, г.Черкассы, Украина, 18029',
+                            address: 'Черкассы, Украина, 18029',
                             phone: '+380 98 002 9369',
                             email: 'bsa2657@yandex.ru',
                             website: 'http://bsa-git.github.io/',
@@ -358,8 +358,8 @@ require(['vue',
                     template: footer,
                     data: function () {
                         return {
-                            copyright: '2017 BSA Lab',
-                            developer: 'Бескоровайный Сергей',
+                            copyright: '2017 Сергей Бескоровайный',
+                            developer: 'BSA Lab.',
                             site: 'http://bsa-git.github.io/'
                         }
                     }
