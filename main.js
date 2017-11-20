@@ -278,18 +278,25 @@ require(['vue',
                         return {
                             posts: [
                                 {
-                                    url: 'http://bsa-git.github.io/blog/gapi/',
+                                    url: 'http://bsa-git.github.io/blog/gapi/overview',
                                     image: 'images/blog-img-1.png',
                                     date: '21 Августа, 2017',
                                     title: 'Google Client API',
                                     text: 'Вы можете использовать в своих клиенских веб приложениях такие Google сервисы как People, Calendar, Drive и т.д.'
                                 },
                                 {
-                                    url: 'http://bsa-git.github.io/silex-mvc/ru/',
-                                    image: 'images/blog-img-2.jpg',
-                                    date: '30 Сентября, 2016',
-                                    title: 'Silex-MVC',
-                                    text: 'Простой фреймворк реализующий шаблон проектирования - MVC на базе SILEX (PHP микро-фреймворка, созданного на основе Symfony2 компонентов).'
+                                    url: 'http://bsa-git.github.io/blog/gapi/gmail-send',
+                                    image: 'images/blog-img-3.jpg',
+                                    date: '08 Ноября, 2017',
+                                    title: 'Google Email Send',
+                                    text: 'Сервис Google Mail позволяет нам передавать почтовые сообщения...'
+                                },
+                                {
+                                    url: 'http://bsa-git.github.io/blog/gapi/gmail-inbox',
+                                    image: 'images/blog-img-5.jpg',
+                                    date: '08 Ноября, 2017',
+                                    title: 'Google Email Inbox',
+                                    text: 'Сервис Google Mail позволяет нам принимать почтовые сообщения...'
                                 },
                                 // {
                                 //     image: 'images/blog-img-3.jpg',
