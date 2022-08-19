@@ -340,7 +340,7 @@ require([
                         return {
                             address: 'Черкассы, Украина, 18029',
                             phone: '+380 98 002 9369',
-                            email: 'bsa2657@yandex.ru',
+                            email: 'bs261257@gmail.com',
                             website: 'http://bsa-git.github.io/',
                             google_maps_url: 'https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d83109.89941469842!2d32.090707699999996!3d49.38650455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1502776343031',// 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109552.19658281952!2d75.78663299928208!3d30.900473636616745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a837462345a7d%3A0x681102348ec60610!2sLudhiana%2C+Punjab+141001!5e0!3m2!1sen!2sin!4v1461389509410',
                             form: {
